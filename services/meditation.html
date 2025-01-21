@@ -1,0 +1,93 @@
+
+<style>
+    .audio-player {position: relative; } 
+    .controls { position: absolute; top: 10; right: 0; } 
+    .controls2 {
+
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+    .controls3{
+
+position: absolute;
+top: 80%;
+left: 50%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+
+}
+    .controls4 { position: absolute; top: 95%; left: 0.75%; } 
+    .controls5 { position: absolute; top: 95%; right: 0.75%; }
+    .container {
+
+position: absolute;
+top: 20%;
+left: 44%;
+-ms-transform: translate(-50%, -50%);
+transform: translate(-50%, -50%);
+}
+
+
+
+
+
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation</title>
+</head>
+<body>
+    
+</body>
+</html>
+<link rel="stylesheet" type="text/css" href="/css/meditation.css"> 
+
+<div class="audio-player">
+
+    <img src="/imgs/bg.gif"></img>
+
+
+    <audio id="audio" controls hidden>
+
+        <source src="/imgs/siteaudio.mp3" type="audio/mpeg">
+
+
+
+
+        Your browser does not support the audio element.
+    </audio>
+    <div>
+        <button id="play-pause-button" class="controls2">Play</button>
+
+        <input type="range" id="volume-control" min="0" max="1" step="0.01" value="1"  class="controls3">
+    </div>
+    <div>
+        <div class="progress-bar" id="progress-bar"></div>
+    </div>
+    <div id="current-time" class="controls4">0:00</div>
+    <div id="total-time"   class="controls5">0:00</div>
+
+
+
+
+    <div class="container">
+    
+        <div class="circle"></div>
+     
+            <p id="text"></p>
+   
+        <div class="pointer-container">
+        
+   </div>
+
+   <div class="gradient-circle"></div>
+</div>
+
+<script src="script.js"></script>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Contact Us</title>
+</head>
+<body>
+
+    <div class="margin-block-50-page">
+
+        <div class="divider">
+            <div class="line"></div>
+            <div class="x">Contact Us</div>
+            <div class="line"></div>
+        </div>
+
+        <form onsubmit="handleSubmit(event)" class="form margin-block-20">
+            <div class="input-div">
+                <input class="input" type="text" name="name" id="name" placeholder="Name" onchange="handleChange(event)">
+                <span class="error-text" id="nameError"></span>
+            </div>
+
+            <div class="input-div">
+                <input class="input" type="email" name="email" id="email" placeholder="Email" onchange="handleChange(event)">
+                <span class="error-text" id="emailError"></span>
+            </div>
+
+            <div class="input-div">
+                <input class="input" type="subject" name="subject" id="subject" placeholder="Subject" onchange="handleChange(event)">
+                <span class="error-text" id="subjectError"></span>
+            </div>
+
+            <div class="input-div">
+                <textarea class="input textarea" name="message" id="message" placeholder="Message" onchange="handleChange(event)"></textarea>
+                <span class="error-text" id="messageError"></span>
+            </div>
+
+            <div class="input-div">
+                <button class="button" type="submit">Send Message</button>
+            </div>
+        </form>
+    </div>
+    <script src="/services/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+html {
+    background-image: url(https://i.pinimg.com/originals/66/53/1b/66531bcbcdc8106beb4709297a71dcc4.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Poppins, sans-serif;
+    height: 100%;
+    
+}
+
+.divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+::placeholder {
+    color: #000000;
+    font-weight: normal;
+    font-family: Poppins, sans-serif;
+    
+}
+
+.divider {
+    display: flex;
+    gap: 20px;
+    padding: 50px;
+}
+
+.line {
+    width: 20vw;
+    border: 1.5px solid #ebd4bb;
+}
+
+.x {
+
+    font-size: 24px;
+    font-weight: 600;
+    color: #f0eac9;
+}
+
+.input-div {
+    width: 60vw;
+}
+
+.input {
+    width: 100%;
+    min-width: 80px;
+    height: 50px;
+    padding: 10px;
+    margin-block: 5px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #FFE49F;
+}
+
+.textarea {
+    height: 100px;
+    resize: none;
+
+}
+
+.button {
+    height: 50px;
+    padding: 10px;
+    margin-block: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+.button:active {
+    background-color: grey;
+}
+
+.error-border {
+    border: 2px solid red;
+    margin-block: 10px 5px;
+}
+
+.error-text {
+    color: red;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .line {
+        width: 30vw;
+    }
+
+    .input-div {
+        width: 90vw;
+    }
+}
+
+/* Button styling */
+.button {
+    height: 50px;
+    padding: 10px;
+    margin-block: 20px 0;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+    border: none;
+    background-color: #4a90e2; /* Change to your preferred color */
+    color: #ffffff; /* Change to your preferred text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover state for buttons */
+.button:hover {
+    background-color: #5c41e1; /* Change to your preferred hover color */
+}
+
+/* Active state for buttons */
+.button:active {
+    background-color: #364db9; /* Change to your preferred active color */
+}
